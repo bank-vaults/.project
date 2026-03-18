@@ -1,0 +1,20 @@
+# Maintainer roster for Bank-Vaults
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+
+maintainers:
+  - project_id: "bank-vaults"
+    org: "bank-vaults"
+    teams:
+      - name: "project-maintainers"
+        members:
+          - akijakya
+          - bonifaido
+          - ccojocar
+          - csatib02
+          - jurgenweber
+          - matyix
+          - pbalogh-sa
+          - primeroz
+          - ramizpolic
+          - sagikazarmark

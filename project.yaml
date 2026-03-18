@@ -1,0 +1,68 @@
+# .project metadata for Bank-Vaults
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add maturity_log entry with TOC issue URL
+# TODO: Set project_lead GitHub handle
+# TODO: Set cncf_slack_channel
+# TODO: Set identity_type under legal (has_dco, has_cla)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "bank-vaults"
+name: "Bank-Vaults"
+description: "Bank-Vaults is a Vault swiss-army knife: a K8s operator, Go client with automatic token renewal, automatic configuration, multiple unseal options and more. A CLI tool to init, unseal and configure Vault (auth methods, secret engines). Direct secret injection into Pods."
+type: "project"
+# TODO: Set project lead GitHub handle
+# project_lead: "github-handle"
+# TODO: Set CNCF Slack channel
+# cncf_slack_channel: "#bank-vaults"
+
+maturity_log:
+  - phase: "sandbox"
+    date: "2026-03-18T14:28:33Z"
+    issue: "https://github.com/cncf/toc/issues/XXX" # TODO: Set TOC issue URL
+
+repositories:
+  - "https://github.com/bank-vaults/bank-vaults"
+
+website: "https://bank-vaults.dev/"
+
+artwork: "https://landscape.cncf.io/logos/bank-vaults.svg"
+
+adopters:
+  path: "https://github.com/bank-vaults/bank-vaults/blob/main/ADOPTERS.md"
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "bank-vaults/bank-vaults"
+
+
+security:
+  policy:
+    path: "https://github.com/bank-vaults/bank-vaults/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/bank-vaults/bank-vaults/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/bank-vaults/bank-vaults/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/cncf/foundation/blob/main/code-of-conduct.md"
+
+legal:
+  license:
+    path: "https://github.com/bank-vaults/bank-vaults/blob/main/LICENSE"
+  identity_type:
+    has_dco: true
+    has_cla: false
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/bank-vaults/bank-vaults/blob/main/README.md"
+
+landscape:
+  category: "Provisioning"
+  subcategory: "Security & Compliance"
+
