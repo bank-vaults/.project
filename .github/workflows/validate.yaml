@@ -15,24 +15,25 @@ jobs:
   validate-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
 
-      - uses: cncf/automation/.github/actions/validate-project@979abb1e07fa1b6f2b4e77200f6a698cdd86e59c
+      - uses: cncf/automation/.github/actions/validate-project@0efe2325565e2156abbedcf40fec2f243918b339
         with:
           project_file: 'project.yaml'
 
   validate-maintainers:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
 
-      - uses: cncf/automation/.github/actions/validate-maintainers@979abb1e07fa1b6f2b4e77200f6a698cdd86e59c
+      - uses: cncf/automation/.github/actions/validate-maintainers@0efe2325565e2156abbedcf40fec2f243918b339
         with:
           maintainers_file: 'maintainers.yaml'
-          verify_maintainers: 'true'
+          # Disabled until the LFX LLT issue is resolved (cncf/automation#293). Validation is done manually for now.
+          verify_maintainers: 'false'
         env:
           LFX_AUTH_TOKEN: ${{ secrets.LFX_AUTH_TOKEN }}

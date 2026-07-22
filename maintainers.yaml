@@ -8,10 +8,7 @@ maintainers:
     teams:
       - name: "project-maintainers"
         members:
-          - akijakya
-          - ccojocar
           - csatib02
-          - jurgenweber
-          - primeroz
-          - ramizpolic
           - sagikazarmark
+          - ramizpolic
+          - akijakya

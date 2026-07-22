@@ -1,29 +1,33 @@
 # .project metadata for Bank-Vaults
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Add maturity_log entry with TOC issue URL
-# TODO: Set project_lead GitHub handle
-# TODO: Set cncf_slack_channel
-# TODO: Set identity_type under legal (has_dco, has_cla)
-# TODO: Add package_managers if distributed via registries
-
 schema_version: "1.0.0"
 slug: "bank-vaults"
 name: "Bank-Vaults"
 description: "Bank-Vaults is a Vault swiss-army knife: a K8s operator, Go client with automatic token renewal, automatic configuration, multiple unseal options and more. A CLI tool to init, unseal and configure Vault (auth methods, secret engines). Direct secret injection into Pods."
 type: "project"
-# TODO: Set project lead GitHub handle
-# project_lead: "github-handle"
-# TODO: Set CNCF Slack channel
-# cncf_slack_channel: "#bank-vaults"
+project_lead: "csatib02"
+slack_channels: 
+  - name: "#bank-vaults"
+    primary: true
 
 maturity_log:
   - phase: "sandbox"
     date: "2026-03-18T14:28:33Z"
-    issue: "https://github.com/cncf/toc/issues/XXX" # TODO: Set TOC issue URL
+    issue: "https://github.com/cncf/sandbox/issues/142"
 
 repositories:
   - "https://github.com/bank-vaults/bank-vaults"
+  - "https://github.com/bank-vaults/vault-operator"
+  - "https://github.com/bank-vaults/vault-secrets-webhook"
+  - "https://github.com/bank-vaults/secrets-webhook"
+  - "https://github.com/bank-vaults/secret-init"
+  - "https://github.com/bank-vaults/secret-sync"
+  - "https://github.com/bank-vaults/vault-env"
+  - "https://github.com/bank-vaults/vault-sdk"
+  - "https://github.com/bank-vaults/vault-secrets-reloader"
+  - "https://github.com/bank-vaults/vault-helm-chart"
+  - "https://github.com/bank-vaults/bank-vaults.dev"
 
 website: "https://bank-vaults.dev/"
 
@@ -32,22 +36,34 @@ artwork: "https://landscape.cncf.io/logos/bank-vaults.svg"
 adopters:
   path: "https://github.com/bank-vaults/bank-vaults/blob/main/ADOPTERS.md"
 
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "bank-vaults/bank-vaults"
+package_managers:
+  docker:
+    - "ghcr.io/bank-vaults/bank-vaults"
+    - "ghcr.io/bank-vaults/vault-operator"
+    - "ghcr.io/bank-vaults/vault-secrets-webhook"
+    - "ghcr.io/bank-vaults/secrets-webhook"
+    - "ghcr.io/bank-vaults/secret-init"
+    - "ghcr.io/bank-vaults/secret-sync"
+    - "ghcr.io/bank-vaults/vault-secrets-reloader"
+    - "ghcr.io/bank-vaults/vault-env"
+  helm:
+    - "oci://ghcr.io/bank-vaults/helm-charts/vault-operator"
+    - "oci://ghcr.io/bank-vaults/helm-charts/vault-secrets-webhook"
+    - "oci://ghcr.io/bank-vaults/helm-charts/secrets-webhook"
+    - "oci://ghcr.io/bank-vaults/helm-charts/vault-secrets-reloader"
 
 
 security:
   policy:
-    path: "https://github.com/bank-vaults/bank-vaults/blob/main/SECURITY.md"
+    path: "https://bank-vaults.dev/docs/security/"
   contact:
     advisory_url: "https://github.com/bank-vaults/bank-vaults/security/advisories/new"
 
 governance:
   contributing:
-    path: "https://github.com/bank-vaults/bank-vaults/blob/main/CONTRIBUTING.md"
+    path: "https://bank-vaults.dev/docs/contributing/"
   code_of_conduct:
-    path: "https://github.com/cncf/foundation/blob/main/code-of-conduct.md"
+    path: "https://bank-vaults.dev/docs/code-of-conduct/"
 
 legal:
   license:
@@ -65,4 +81,3 @@ documentation:
 landscape:
   category: "Provisioning"
   subcategory: "Security & Compliance"
-
