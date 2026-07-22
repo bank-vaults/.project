@@ -12,3 +12,8 @@ maintainers:
           - sagikazarmark
           - ramizpolic
           - akijakya
+      - name: "emeritus-maintainers"
+        members:
+          - bonifaido
+          - pbalogh-sa
+          - matyix
