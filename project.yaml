@@ -31,7 +31,7 @@ repositories:
 
 website: "https://bank-vaults.dev/"
 
-artwork: "https://landscape.cncf.io/logos/bank-vaults.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/bank-vaults"
 
 adopters:
   path: "https://github.com/bank-vaults/bank-vaults/blob/main/ADOPTERS.md"
